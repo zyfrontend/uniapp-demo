@@ -124,3 +124,13 @@ npm uninstall -g @vue/cli
 npm install -g @vue/cli@4
 ```
 
+
+
+# 关于sass
+
+命令行创建的`uniapp`项目需要自行手动安装sass
+
+```shell
+npm insta --save-dev sass sass-loader
+```
+

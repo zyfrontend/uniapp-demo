@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "types": [
       "@dcloudio/types",
       "miniprogram-api-typings",

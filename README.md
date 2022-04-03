@@ -13,9 +13,9 @@ npm install -g @vue/cli@4
 
 # 使用本项目
 ```shell
-git clone 
+git clone https://github.com/zyfrontend/uniapp-demo.git
 
-cd 
+cd uniapp-demo
 # 安装依赖
 npm install
 # 运行

@@ -131,6 +131,7 @@ npm install -g @vue/cli@4
 命令行创建的`uniapp`项目需要自行手动安装sass
 
 ```shell
-npm insta --save-dev sass sass-loader
+npm install --save-dev sass sass-loader
+npm install --save uview-ui
 ```
 

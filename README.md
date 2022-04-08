@@ -132,6 +132,57 @@ npm install -g @vue/cli@4
 
 ```shell
 npm install --save-dev sass sass-loader
+```
+# 关于 uview-ui设置
+安装
+
+```shell
 npm install --save uview-ui
 ```
+配置
+```shell
+// main.js
+import uView from "uview-ui";
+Vue.use(uView);
+```
 
+全局主题样式
+
+```shell
+/* uni.scss */
+@import 'uview-ui/theme.scss';
+```
+
+基础样式
+
+```vue
+<style lang="scss">
+	/* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
+	@import "uview-ui/index.scss";
+</style>
+```
+
+配置easycom组件模式
+
+```js
+// pages.json
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	
+	// 此为本身已有的内容
+	"pages": [
+		// ......
+	]
+}
+```
+
+Cli模式额外配置
+
+```js
+// vue.config.js，如没有此文件则手动创建
+module.exports = {
+    transpileDependencies: ['uview-ui']
+}
+```
